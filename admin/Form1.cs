@@ -4970,6 +4970,23 @@ setvar=REC_PROJECT=zao_mks");
                 MessageBox.Show(@"error", "compmgmt.msc", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void metroTile127_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe ", @"\\guo.local\DFSFILES\IT\10.0_SIB\local_admin\IT\_Стрим");
+        }
+
+        private void metroTile127_MouseLeave(object sender, EventArgs e)
+        {
+            metroTile127.Style = MetroFramework.MetroColorStyle.Silver;
+            metroTile127.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+        }
+
+        private void metroTile127_MouseMove(object sender, MouseEventArgs e)
+        {
+            metroTile127.Style = MetroFramework.MetroColorStyle.Green;
+            metroTile127.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+        }
     }
 }
     
