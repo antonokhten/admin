@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfLogConfig>
+
+    <LogConfig Product="DameWare MRC client">
+      <LogName>MRC client                             </LogName>
+      <ConfigFilePath>DWRCC.Logging.xml</ConfigFilePath>
+      <ConfigLevelXPath>//root/priority</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare DRS client">
+      <LogName>DRS client                             </LogName>
+      <ConfigFilePath>DNTU.Logging.xml</ConfigFilePath>
+      <ConfigLevelXPath>//root/priority</ConfigLevelXPath>
+    </LogConfig>
+    
+    <LogConfig Product="DameWare MRC agent">
+      <LogName>MRC agent                              </LogName>
+      <ConfigFilePath>DWRCS.Logging.xml</ConfigFilePath>
+      <ConfigLevelXPath>//root/priority</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare MRC chat">
+      <LogName>MRC chat                               </LogName>
+      <ConfigFilePath>DWRCChat.Logging.xml</ConfigFilePath>
+      <ConfigLevelXPath>//root/priority</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare MRC ST">
+      <LogName>MRC Service Tray                       </LogName>
+      <ConfigFilePath>DWRCST.Logging.xml</ConfigFilePath>
+      <ConfigLevelXPath>//root/priority</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare licensing framework">
+      <LogName>Licensing Framework                    </LogName>
+      <ConfigFilePath>SolarWinds.Licensing.Framework.dll.config</ConfigFilePath>
+      <ConfigLevelXPath>/configuration/log4net/root/level</ConfigLevelXPath>
+    </LogConfig>
+
+
+    <LogConfig Product="DameWare MRC licensor">
+      <LogName>MRC licensor                   </LogName>
+      <ConfigFilePath>SolarWinds.MRC.Licensor.exe.config</ConfigFilePath>
+      <ConfigLevelXPath>/configuration/log4net/root/level</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare DRS licensor">
+      <LogName>DRS licensor                   </LogName>
+      <ConfigFilePath>SolarWinds.DRS.Licensor.exe.config</ConfigFilePath>
+      <ConfigLevelXPath>/configuration/log4net/root/level</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare MRC WHD Integration">
+      <LogName>DameWare MRC WHD Integration   </LogName>
+      <ConfigFilePath>DWRCWHD.Logging.xml</ConfigFilePath>
+      <ConfigLevelXPath>//root/priority</ConfigLevelXPath>
+    </LogConfig>
+
+    <LogConfig Product="DameWare Change Running Mode Utility">
+      <LogName>Change Running Mode Utility    </LogName>
+      <ConfigFilePath>SolarWinds.RunningModeUtility.exe.config</ConfigFilePath>
+      <ConfigLevelXPath>/configuration/log4net/root/level</ConfigLevelXPath>
+    </LogConfig>
+   
+</ArrayOfLogConfig>

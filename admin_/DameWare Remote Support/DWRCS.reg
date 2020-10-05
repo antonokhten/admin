@@ -1,0 +1,67 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\DameWare Development\Mini Remote Control Service]
+
+[HKEY_LOCAL_MACHINE\Software\DameWare Development\Mini Remote Control Service\IP Filter]
+"Enable Filter For Remote Control"=dword:00000000
+"Access Granted"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\DameWare Development\Mini Remote Control Service\Settings]
+"Force Direct Connection"=dword:00000001
+"Remote Connection Availability"=dword:00000000
+"Port"=dword:000017f1
+"Notify On New Connection"=dword:00000001
+"Notify On New Connection Timeout Value"=dword:0000000f
+"Notify On Disconnection"=dword:00000000
+"No Notify Sound"=dword:00000000
+"Notify Dialog Caption"="DameWare Mini Remote Control"
+"Notify Dialog Text 1"="MRC Notification"
+"Notify Dialog Text 2 Remote Control"="MRC Notification"
+"Permission Required"=dword:00000000
+"Permission Required Also When Locked"=dword:00000001
+"Center Permission Dialog"=dword:00000000
+"Permission Dialog Set Focus On Decline Button"=dword:00000000
+"TrayIcon"=dword:00000001
+"Permission Required for non Admin"=dword:00000001
+"Permission Required for non Admin Disconnect If At Logon Desktop"=dword:00000001
+"Permission Required for non Admin Force View Only"=dword:00000001
+"On Disconnect Logoff Desktop"=dword:00000000
+"Force Applications Close"=dword:00000000
+"On Disconnect Lock Workstation"=dword:00000000
+"Logon At Logon Desktop Only"=dword:00000000
+"Logon At Logon Desktop Only Timeout"=dword:00000001
+"Logon At Logon Desktop Only Timeout Value"=dword:00000014
+"Enable Disconnection Menu"=dword:00000001
+"Enable Settings Menu"=dword:00000001
+"Enable Invitation Menu"=dword:00000001
+"Enable Connect To Menu"=dword:00000001
+"Enable Connect To Menu Proxy"=dword:00000001
+"Absolute Timeout"=dword:00000000
+"Allow Only Administrators To Connect"=dword:00000000
+"Requires Logon Locally Privilege"=dword:00000000
+"Must Be Member Of Group"=dword:00000000
+"Socket Logon Timeout"=dword:00015f90
+"Authentication Type"=dword:0000001e
+"Must Have Logon Locally Rights with Windows Logon"=dword:00000000
+"SFT: Enable Simple File Transfer"=dword:00000001
+"SFT: Append Host Name"=dword:00000000
+"SFT: User Response Time Out"=dword:00001770
+"SFT: Upload Folder"="%SYSTEMROOT%\\dwrcs\\Uploads\\"
+"Disable Version Downgrade"=dword:00000000
+"Allow All Administrators To Have Control"=dword:00000000
+"Upgrade Information"=""
+"Downgrade Information"=""
+"Max Access Log Size"=dword:009c4000
+"Force Encrypt Data"=dword:00000000
+"Force Encrypt Images"=dword:00000000
+"Force Encrypt Files"=dword:00000000
+"Allow Only Mode FIPS"=dword:00000000
+"Filter Change"=dword:00000000
+"Enable Reporting For This Host"=dword:00000000
+"Max Log Size"=dword:009c4000
+"Log Path"="C:\\Program Files (x86)\\SolarWinds\\DameWare Remote Support\\"
+"Enable Log Reporting"=dword:00000000
+"Log Host Port Number"=dword:000017f1
+"Log Host"=""
+"Use Shared Secret"=dword:00000000
+

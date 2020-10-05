@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"> 
+
+   <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender"> 
+ 		<param name="Target" value="System.out"/> 
+ 		<layout class="org.apache.log4j.PatternLayout"> 
+ 			<param name="ConversionPattern" value="%-5p %c{1} - %m%n"/> 
+ 		</layout> 
+ 	</appender> 
+ 
+ 	<appender name="RollingLogFileAppender" class="org.apache.log4j.RollingFileAppender">
+ 		<param name="file" value="${ALLUSERSPROFILE}\Application Data\DameWare Development\Logs\DWRCS.log"/>
+ 		<param name="append" value="true"/>
+ 		<param name="MaxFileSize" value="5MB"/>
+ 		<param name="MaxBackupIndex" value="5"/>
+ 		<layout class="org.apache.log4j.PatternLayout">
+ 			<param name="ConversionPattern" value="%d %X{threadName} %-5p [%c] %m%n"/>
+ 		</layout>
+ 	</appender> 
+ 
+ 	<root>
+ 		<priority value="WARN" />
+ 		<appender-ref ref="RollingLogFileAppender"/>
+ 		<appender-ref ref="ConsoleAppender"/>
+ 	</root> 
+ 
+ </log4j:configuration>

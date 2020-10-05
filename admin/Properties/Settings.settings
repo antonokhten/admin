@@ -1,0 +1,122 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="admin.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UNIT1_name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">U1     ЖЭУ111          Есенина 16</Value>
+    </Setting>
+    <Setting Name="db_adminkaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\sibsup\DISTR\test_admin\db_adminka.accdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\sibsup\DISTR\test_admin\db_adminka.accdb</Value>
+    </Setting>
+    <Setting Name="dmwrPath_old" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\SolarWinds\DameWare Remote Support\</Value>
+    </Setting>
+    <Setting Name="mmc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\sibsup\DISTR\okhten_mmc.msc</Value>
+    </Setting>
+    <Setting Name="msinfo_xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\windows\system32\msinfo32.exe</Value>
+    </Setting>
+    <Setting Name="acronis_xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\Acronis\TrueImageHome\TrueImageLauncher.exe</Value>
+    </Setting>
+    <Setting Name="PsLogon" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\sibsup\distr\okhten\user_find.ps1</Value>
+    </Setting>
+    <Setting Name="phone_number" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2666</Value>
+    </Setting>
+    <Setting Name="phone_pass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VKV2666</Value>
+    </Setting>
+    <Setting Name="phone_server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.10.0.20</Value>
+    </Setting>
+    <Setting Name="phone_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">okhten</Value>
+    </Setting>
+    <Setting Name="dmwrPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\okhten\Desktop\DameWare Mini Remote Control x64\DWRCC.exe</Value>
+    </Setting>
+    <Setting Name="dmwrPath1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\okhten\Desktop\DameWare Mini Remote Control x64\</Value>
+    </Setting>
+    <Setting Name="call_status" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="servise_int" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="check_roll_dw" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="j83_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">asa(7port) -&gt; hp(25port) </Value>
+    </Setting>
+    <Setting Name="phone1_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Волков Д</Value>
+    </Setting>
+    <Setting Name="phone2_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Рахмагов С</Value>
+    </Setting>
+    <Setting Name="phone3_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Башкиров А</Value>
+    </Setting>
+    <Setting Name="phone4_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Васильчук В</Value>
+    </Setting>
+    <Setting Name="phone5_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Анохин</Value>
+    </Setting>
+    <Setting Name="phone6_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Бужор</Value>
+    </Setting>
+    <Setting Name="phone7_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ушаков</Value>
+    </Setting>
+    <Setting Name="phone8_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Литвин</Value>
+    </Setting>
+    <Setting Name="phone9_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Шелепов</Value>
+    </Setting>
+    <Setting Name="phone10_label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Шипачева</Value>
+    </Setting>
+    <Setting Name="phone1_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4399</Value>
+    </Setting>
+    <Setting Name="phone2_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7223</Value>
+    </Setting>
+    <Setting Name="phone3_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7224</Value>
+    </Setting>
+    <Setting Name="phone4_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7111</Value>
+    </Setting>
+    <Setting Name="phone5_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4499</Value>
+    </Setting>
+    <Setting Name="phone6_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4433</Value>
+    </Setting>
+    <Setting Name="phone7_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1111</Value>
+    </Setting>
+    <Setting Name="phone8_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4411</Value>
+    </Setting>
+    <Setting Name="phone9_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4444</Value>
+    </Setting>
+    <Setting Name="phone10_tel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5606</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,31 @@
+<?rsa version="1.0" encoding="utf-8"?>
+<Configuration>
+	<Product Id="Crypto-C ME">
+		<Version>CRYPTO-C ME 3.0.0.0</Version>
+		<ReleaseDate>""</ReleaseDate>
+		<ExpDate>""</ExpDate>
+		<Copyright>
+			Copyright (C) RSA
+		</Copyright>
+		<Library Id="master">cryptocme2</Library>
+	</Product>
+	<Runtime Id="runtime">
+		<LoadOrder>
+			<Library Id="ccme_base">ccme_base</Library>
+			<Library Id="ccme_ecc">ccme_ecc</Library>
+			<Library Id="ccme_eccaccel">ccme_eccaccel</Library>
+			<Library Id="ccme_eccnistaccel">ccme_eccnistaccel</Library>
+		</LoadOrder>
+		<StartupConfig>
+			<SelfTest>OnLoad</SelfTest>
+		</StartupConfig>
+	</Runtime>
+	<Signature URI="#ccme_base" Algorithm="FIPS140_INTEGRITY">MC0CFQCTK4pVIJWgPoUB9ASH6y/84STfFwIUM/0ZdeEUDxzldP8jhekPfaAZhxo=</Signature>
+	<Signature URI="#ccme_ecc" Algorithm="FIPS140_INTEGRITY">MC0CFQCYE67gI39YIpMb5XI/Md/HNQtkjQIUQxcUGNTsv1uy5rq2RG4rPEn5Ul8=</Signature>
+	<Signature URI="#ccme_eccaccel" Algorithm="FIPS140_INTEGRITY">MC0CFHiCdjQPT1XMMQ00/8s35k5a+T92AhUAlHHPcILBW79uELcI10V8c6ua/2k=</Signature>
+	<Signature URI="#ccme_eccnistaccel" Algorithm="FIPS140_INTEGRITY">MC0CFGC7dHWFdFNCz/mm5OdIUiLXdC1BAhUAih+aefsCDr0/AhYts9npRwT/q4E=</Signature>
+	<Signature URI="#master" Algorithm="FIPS140_INTEGRITY">MC0CFFHi7gqhwbYhJi3aBG+sHxY0ZK0JAhUAkQMAjmlnYtc5DUU/V1Ca0z9o64M=</Signature>
+	<Signature URI="#Crypto-C ME" Algorithm="FIPS140_INTEGRITY">MC0CFCGBhMyHP+Mv8Mm44C8p0u1fzSSKAhUAtf765QBxJCB79c6B8JMm3zxNNds=</Signature>
+	<Signature URI="#runtime" Algorithm="FIPS140_INTEGRITY">MCwCFFcG2p9O6+jEiCsibrYTKWS3u8ivAhQoeGJfS+mEIwBXvdUcTJQTyXQpNg==</Signature>
+</Configuration>
+

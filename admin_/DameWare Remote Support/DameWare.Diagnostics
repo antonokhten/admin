@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<diagnostics Description="DameWare Diagnostics">
+  <files Description="Consoles log files" Source="*.*" SourceFolder="%APPDATA%\DameWare Development\Logs" IncludeSubDirectories="True" OutputFolder="LogFiles"/>
+  <files Description="Agent log files" Source="*.*" SourceFolder="%ALLUSERSPROFILE%\Application Data\DameWare Development\Logs" IncludeSubDirectories="True" OutputFolder="LogFiles"/>
+  <files Description="Licensing log files" Source="*.*" SourceFolder="%ALLUSERSPROFILE%\Application Data\Solarwinds\Licensing" IncludeSubDirectories="True" OutputFolder="LogFiles"/>
+  <files Description="Licensor log files" Source="*.*" SourceFolder="%ALLUSERSPROFILE%\Application Data\SolarWinds\Logs\Dameware" IncludeSubDirectories="True" OutputFolder="LogFiles"/>
+
+  <files Description="Config files" Source="*.config" OutputFolder="ConfigFiles"/>
+  <files Description="XML files" Source="*.xml" OutputFolder="XMLFiles"/>
+  <files Description="Database files" Source="*.*" SourceFolder="%APPDATA%\DameWare Development" IncludeSubDirectories="False" OutputFolder="Database"/>
+
+  <eventlog Description="Application Event Log" LogName="Application" OutputFile="EventLogs\Application.csv" MaxEntryCount="2000"/>
+  <eventlog Description="System Event Log" LogName="System" OutputFile="EventLogs\System.csv" MaxEntryCount="2000"/>
+  <eventlog Description="Security Event Log" LogName="Security" OutputFile="EventLogs\Security.csv" MaxEntryCount="2000"/>
+  <eventlog Description="DameWare Event Log" LogName="DameWare" OutputFile="EventLogs\DameWare.csv" MaxEntryCount="2000"/>
+
+  <sysinfo OutputFile="SystemInformation\SysInfo.csv"/>
+
+  <exec Description="Computer Information" Command="systeminfo" StdOutputFile="SystemInformation\SystemInfo.txt" />
+  <exec Description="System Group Policy Result" Command="gpresult" Arguments="/Z" StdOutputFile="SystemInformation\gpresult.txt" />
+
+  <exec Description="Running processes" Command="WMIC" Arguments="PROCESS get Caption, Processid, CommandLine" StdOutputFile="SystemInformation\RunningProcess.log" />
+
+  <registry Description="Query MRC settings from registry" OutputFile="Registry\MRCSettings.csv" QueryMode="Subtree">HKEY_CURRENT_USER\Software\DameWare Development\Mini Remote Control\Settings</registry>
+  <registry Description="Query DRS settings from registry" OutputFile="Registry\DRSSettings.csv" QueryMode="Subtree">HKEY_CURRENT_USER\Software\DameWare Development\NT Utilities\DNTU\Settings</registry>
+  
+  <registry Description="Query .NET Framework version from registry" OutputFile="Registry\NETFrameworkVersion.csv" QueryMode="Children">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP</registry>
+  <registry Description="Query FIPSAlgorithmPolicy subtree from registry" OutputFile="Registry\FIPSPolicyTree.csv" QueryMode="Subtree">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy</registry>
+  <registry Description="Query FIPSAlgorithmPolicy key value from registry" OutputFile="Registry\FIPSPolicyKey.csv" QueryMode="SingleValue" ValueName="FIPSAlgorithmPolicy">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\</registry>
+  <registry Description="Query Local System Account International" OutputFile="Registry\Regional Settings - Local System Account.csv" QueryMode="Values">HKEY_USERS\S-1-5-18\Control Panel\International\</registry>
+  <registry Description="Query Local Service Account International" OutputFile="Registry\Regional Settings - Local Service Account.csv" QueryMode="Values">HKEY_USERS\S-1-5-19\Control Panel\International\</registry>
+  <registry Description="Query Network Service Account International" OutputFile="Registry\Regional Settings - Network Service Account.csv" QueryMode="Values">HKEY_USERS\S-1-5-20\Control Panel\International\</registry>
+
+  <assemblyinfo Description="Collect using assembly versions" OutputFile="SystemInformation\AssemblyInfo.csv" />
+  
+  <netassemblyinfo Description=".NET Assembyly Information" OutputFile="SystemInformation\NetAssemblyInfo.csv"/>
+
+</diagnostics>
