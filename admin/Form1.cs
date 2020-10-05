@@ -24,6 +24,7 @@ using Sipek.Common;
 using Sipek.Common.CallControl;
 using Sipek.Sip;
 using System.Management.Automation;
+using System.Net.NetworkInformation;
 
 //using System.Management.automation;
 
@@ -3414,7 +3415,7 @@ setvar=REC_PROJECT=zao_mks");
 
         private void label6_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(label6.Text);
+            Clipboard.SetText(asa_ip.Text);
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -5010,6 +5011,34 @@ setvar=REC_PROJECT=zao_mks");
         {
             metroTile120.Style = MetroFramework.MetroColorStyle.Green;
             metroTile120.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+        }
+
+        private void metroButton14_Click(object sender, EventArgs e)
+        {
+            //   Ping ping = new Ping();
+            //  PingReply reply = ping.Send("8.8.8.8",1000);
+            // MessageBox.Show(reply.Status.ToString());
+            
+            try
+            {
+                Ping ping = new Ping();
+                PingReply reply = ping.Send(asa_ip.Text, 1000);
+                //MessageBox.Show(reply.Status.ToString());
+               
+                if (reply.Status.ToString() == "Success")
+                {
+                    asa_ip.BackColor = Color.Green;
+                }
+                else
+                {
+                    asa_ip.BackColor = Color.Red;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("asa ping err mb14");
+            }
+
         }
     }
 }

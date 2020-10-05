@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -295,9 +295,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.asa_panel = new System.Windows.Forms.Panel();
+            this.asa_ip = new System.Windows.Forms.Label();
+            this.asa_name = new System.Windows.Forms.Label();
             this.metroTile121 = new MetroFramework.Controls.MetroTile();
             this.metroTile67 = new MetroFramework.Controls.MetroTile();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
@@ -389,7 +389,7 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.asa_panel.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcompanyBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_adminkaDataSet4)).BeginInit();
@@ -730,21 +730,21 @@
             // 
             // table1DataGridView
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.table1DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.table1DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.table1DataGridView.AutoGenerateColumns = false;
             this.table1DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.table1DataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.table1DataGridView.BackgroundColor = System.Drawing.Color.Silver;
             this.table1DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Coral;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table1DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Coral;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table1DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.table1DataGridView.ColumnHeadersHeight = 50;
             this.table1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
@@ -758,14 +758,14 @@
             this.dataGridViewTextBoxColumn9});
             this.table1DataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.table1DataGridView.DataSource = this.table1BindingSource;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.table1DataGridView.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.table1DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.table1DataGridView.Dock = System.Windows.Forms.DockStyle.Left;
             this.table1DataGridView.EnableHeadersVisualStyles = false;
             this.table1DataGridView.ImeMode = System.Windows.Forms.ImeMode.Katakana;
@@ -773,14 +773,14 @@
             this.table1DataGridView.Name = "table1DataGridView";
             this.table1DataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.table1DataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Coral;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table1DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Coral;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table1DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.table1DataGridView.RowHeadersVisible = false;
             this.table1DataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Maroon;
             this.table1DataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Black;
@@ -861,7 +861,7 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(20, 60);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(1836, 898);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroTabControl1.TabIndex = 2;
@@ -3547,7 +3547,7 @@
             this.metroTabPage6.Controls.Add(this.panel4);
             this.metroTabPage6.Controls.Add(this.panel3);
             this.metroTabPage6.Controls.Add(this.panel2);
-            this.metroTabPage6.Controls.Add(this.panel1);
+            this.metroTabPage6.Controls.Add(this.asa_panel);
             this.metroTabPage6.Controls.Add(this.metroTile121);
             this.metroTabPage6.Controls.Add(this.metroTile67);
             this.metroTabPage6.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -3805,6 +3805,7 @@
             this.metroButton14.TabIndex = 163;
             this.metroButton14.Text = "ping";
             this.metroButton14.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton14.Click += new System.EventHandler(this.metroButton14_Click);
             // 
             // panel10
             // 
@@ -4349,36 +4350,36 @@
             this.label8.Text = "HP 1910-24-PoE";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // panel1
+            // asa_panel
             // 
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(22, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 73);
-            this.panel1.TabIndex = 13;
+            this.asa_panel.Controls.Add(this.asa_ip);
+            this.asa_panel.Controls.Add(this.asa_name);
+            this.asa_panel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asa_panel.Location = new System.Drawing.Point(22, 43);
+            this.asa_panel.Name = "asa_panel";
+            this.asa_panel.Size = new System.Drawing.Size(129, 73);
+            this.asa_panel.TabIndex = 13;
             // 
-            // label6
+            // asa_ip
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(16, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "10.10.0.1";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.asa_ip.AutoSize = true;
+            this.asa_ip.BackColor = System.Drawing.Color.Transparent;
+            this.asa_ip.Location = new System.Drawing.Point(16, 42);
+            this.asa_ip.Name = "asa_ip";
+            this.asa_ip.Size = new System.Drawing.Size(52, 13);
+            this.asa_ip.TabIndex = 5;
+            this.asa_ip.Text = "10.10.0.1";
+            this.asa_ip.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label5
+            // asa_name
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(67, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "asa2600";
+            this.asa_name.AutoSize = true;
+            this.asa_name.BackColor = System.Drawing.Color.Transparent;
+            this.asa_name.Location = new System.Drawing.Point(67, 9);
+            this.asa_name.Name = "asa_name";
+            this.asa_name.Size = new System.Drawing.Size(48, 13);
+            this.asa_name.TabIndex = 4;
+            this.asa_name.Text = "asa2600";
             // 
             // metroTile121
             // 
@@ -5188,8 +5189,8 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.asa_panel.ResumeLayout(false);
+            this.asa_panel.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcompanyBindingSource6)).EndInit();
@@ -9493,8 +9494,8 @@
         private MetroFramework.Controls.MetroTile metroTile92;
         private MetroFramework.Controls.MetroTile metroTile93;
         private MetroFramework.Controls.MetroTabPage metroTabPage6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label asa_ip;
+        private System.Windows.Forms.Label asa_name;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
@@ -9502,7 +9503,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel asa_panel;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
