@@ -4987,6 +4987,30 @@ setvar=REC_PROJECT=zao_mks");
             metroTile127.Style = MetroFramework.MetroColorStyle.Green;
             metroTile127.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
         }
+
+        private void metroTile120_MouseLeave(object sender, EventArgs e)
+        {
+            metroTile120.Style = MetroFramework.MetroColorStyle.Silver;
+            metroTile120.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+        }
+
+        private void metroTile126_MouseLeave(object sender, EventArgs e)
+        {
+            metroTile126.Style = MetroFramework.MetroColorStyle.Silver;
+            metroTile126.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+        }
+
+        private void metroTile126_MouseMove(object sender, MouseEventArgs e)
+        {
+            metroTile126.Style = MetroFramework.MetroColorStyle.Green;
+            metroTile126.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+        }
+
+        private void metroTile120_MouseMove(object sender, MouseEventArgs e)
+        {
+            metroTile120.Style = MetroFramework.MetroColorStyle.Green;
+            metroTile120.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+        }
     }
 }
     
